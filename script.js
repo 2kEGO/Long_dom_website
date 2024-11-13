@@ -80,17 +80,22 @@ document.getElementById('form').addEventListener('reset', function() {
 
 
 function changeTextColor(){
-    
+    const colorButton = document.getElementById('changeTextColor');
     const bodyContainer = document.getElementById('body-container');
     let isBlack = true;
 
     if (isBlack){
         bodyContainer.classList.toggle('changeTextColor');
         isBlack = false;
+        colorButton.style.backgroundColor = 'black';
+        colorButton.style.color = 'white';
     }
     else {
         
         isBlack = true;
+        colorButton.style.backgroundColor = 'white';
+        colorButton.style.color = 'black';
     }
 
 }
+
